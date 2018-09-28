@@ -1,0 +1,111 @@
+/*********************************************
+General
+*********************************************/
+body {
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+    outline: none;
+}
+
+.wrap {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.off-canvas {
+    background-color: #333;
+}
+
+/*********************************************
+Navigation-mobile
+*********************************************/
+
+/*********************************************
+Navigation-desktop
+*********************************************/
+.nav-desktop {
+    background-color: #333;
+    color: white;
+    height: 80px;
+    padding: 0;
+}
+.site-logo {
+    line-height: 80px;
+}
+.top-bar ul {
+    line-height: 80px;
+    background-color: #333;
+}
+.menu > li > a {
+    line-height: 80px;
+    display: inline-block;
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    color: white;
+}
+.menu > li > a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/*********************************************
+Hero section
+*********************************************/
+.hero {
+    padding: 80px 0px;
+    height: 400px;
+    background: url('../img/dark-grey-terrazzo.png');
+    color: white;
+}
+.hero h1,.hero p {
+    width: 70%;
+}
+/*********************************************
+Main section
+*********************************************/
+
+.main {
+    padding: 80px 0px;
+}
+
+
+/*********************************************
+Footer
+*********************************************/
+
+footer {
+    padding: 80px 0px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    display: block;
+}
+
+/*********************************************
+Media queries
+*********************************************/
+
+@media (max-width : 640px) {
+    .nav-desktop {
+        display: none;
+    }
+    .menu > li {
+        display: block;
+    }
+}
+
+@media (max-width : 970px) {
+    .hero h1,.hero p {
+        width: 100%;
+    }
+}
+
+@media (max-width : 585px) {
+    .hero {
+        height: 550px;
+    }
+}
